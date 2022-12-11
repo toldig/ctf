@@ -4,7 +4,7 @@ import numpy as np
 
 # Update these for each day
 IS_TEST = False
-DAY = 1
+DAY = 10
 part1_expected = 13140
 part2_expected = 0
 
