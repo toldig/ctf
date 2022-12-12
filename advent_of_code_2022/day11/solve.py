@@ -3,7 +3,7 @@
 import numpy as np
 
 # Update these for each day
-IS_TEST = False
+IS_TEST = True
 DAY = 11
 part1_expected = 10605
 part2_expected = 2713310158
@@ -103,5 +103,5 @@ def solve_part2(data):
 lines = load_data(file_name)
 data = format_data(lines)
 
-# print(f'Day{DAY} part 1: {solve_part1(data)}')
-print(f'Day{DAY} part 2: {solve_part2(data)}')
+print(f'Day{DAY} part 1: {solve_part1(format_data(lines))}')
+print(f'Day{DAY} part 2: {solve_part2(format_data(lines))}')
